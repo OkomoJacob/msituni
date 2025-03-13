@@ -1,0 +1,58 @@
+* {
+  margin: 5px;
+}
+
+/* .landing {
+
+} */
+
+nav {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+
+.content {
+  padding: 3%;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.content-txt {
+  /* border: 1px solid red; */
+  margin: 5% 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+}
+
+.content p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+}
+
+.img2 {
+  width: 60%;
+}
+
+.point {
+  display: flex;
+  gap: 2%;
+  align-items: center;
+}
+
+.point-img {
+  width: 5%;
+}
+
+.returns {
+  display: flex;
+  justify-content: center;
+}
+
+.returns .img3 {
+  width: 90%;
+}
