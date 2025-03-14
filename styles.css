@@ -1,16 +1,59 @@
+@font-face {
+  font-family: "Okta Neue";
+  src: url("assets/fonts/OktaNeue-Normal.woff") format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Okta Neue";
+  src: url("assets/fonts/OktaNeue-Regular.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Okta Neue";
+  src: url("assets/fonts/OktaNeue-Medium.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Okta Neue";
+  src: url("assets/fonts/OktaNeue-SemiBold.woff") format("woff");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Okta Neue";
+  src: url("assets/fonts/OktaNeue-Bold.woff") format("woff");
+  font-weight: 700;
+}
+:root {
+  --primary-blue: #007bff;
+  --light-blue: #e6f0fa;
+  --dark-gray: #333;
+  --medium-gray: #777;
+  --light-gray: #e0e0e0;
+}
+
+body {
+  font-family: "Okta Neue", sans-serif !important;
+  font-weight: normal;
+  margin: 0 3%;
+}
+
 * {
   margin: 5px;
 }
-
-/* .landing {
-
-} */
 
 nav {
   height: 80px;
   display: flex;
   justify-content: space-between;
   border-radius: 8px;
+}
+
+.landing .logo img {
+  width: 70px;
 }
 
 .content {
@@ -55,4 +98,75 @@ nav {
 
 .returns .img3 {
   width: 90%;
+}
+.msituni-app img {
+  height: 100px;
+  cursor: pointer;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  background-color: #f2f2f2;
+  padding: 2rem;
+  font-size: 14px;
+  color: #666;
+}
+
+footer > div:not(.copyright) {
+  padding: 1rem;
+}
+
+.copyright {
+  grid-column: 1 / span 4;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.footer-img {
+  text-align: center;
+}
+
+.footer-img img {
+  max-width: 100%;
+}
+
+.footer-img p {
+  margin-top: 1rem;
+}
+
+.contacts ul,
+.quicklinks ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contacts li,
+.quicklinks li {
+  margin-bottom: 0.5rem;
+}
+
+.contacts a,
+.quicklinks a {
+  color: #333;
+  text-decoration: none;
+}
+
+.contacts a:hover,
+.quicklinks a:hover {
+  text-decoration: underline;
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: center;
+}
+
+.socialmedia a {
+  margin-right: 1rem;
+}
+
+.socialmedia img {
+  width: 30px;
 }
